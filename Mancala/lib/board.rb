@@ -27,23 +27,25 @@ class Board
   end
 
   def make_move(start_pos, current_player_name)
-    i = 1
-    if (0..5).include?((start_pos + i) % 13)
-      index = (start_pos + i) % 13 - 1
-    else
-      index = (start_pos + i) % 13
-    end
 
-    until @cups[start_pos].empty?
-      if ((current_player_name == @name1) && index == 13) || ((current_player_name == @name2) && index == 6)
-        next
-      else
-        @cups[index]  << @cups[start_pos].pop
+    copy = @cups[start_pos].dup
+    @cups[start_pos] = []
+    curr_idx = start_pos
+    until copy.empty?
+      curr_idx += 1
+      if curr_idx > 13
+        curr_idx = 0
       end
-      i += 1
+      if curr_idx == 6
+        @cups[curr_idx] << copy.shift if current_player_name == @name1
+      elsif curr_idx == 13
+        @cups[curr_idx] << copy.shift if current_player_name == @name2
+      else
+        @cups[curr_idx] << copy.shift
+      end
     end
     render
-    next_turn(index)
+    next_turn(curr_idx)
   end
 
   def next_turn(ending_cup_idx)
