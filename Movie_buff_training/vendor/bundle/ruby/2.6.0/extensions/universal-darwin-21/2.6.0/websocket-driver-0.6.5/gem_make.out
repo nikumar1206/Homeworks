@@ -1,0 +1,16 @@
+current directory: /Users/nikhilkumar/Documents/GitHub/App_Academy/Homeworks/Movie_buff_training/vendor/bundle/ruby/2.6.0/gems/websocket-driver-0.6.5/ext/websocket-driver
+/System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/bin/ruby -I /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0 -r ./siteconf20220428-61659-4pdql.rb extconf.rb
+creating Makefile
+
+current directory: /Users/nikhilkumar/Documents/GitHub/App_Academy/Homeworks/Movie_buff_training/vendor/bundle/ruby/2.6.0/gems/websocket-driver-0.6.5/ext/websocket-driver
+make "DESTDIR=" clean
+
+current directory: /Users/nikhilkumar/Documents/GitHub/App_Academy/Homeworks/Movie_buff_training/vendor/bundle/ruby/2.6.0/gems/websocket-driver-0.6.5/ext/websocket-driver
+make "DESTDIR="
+compiling websocket_mask.c
+linking shared-object websocket_mask.bundle
+ld: warning: directory not found for option '-L/AppleInternal/Library/BuildRoots/66382bca-8bca-11ec-aade-6613bcf0e2ee/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.Internal.sdk/usr/local/lib'
+
+current directory: /Users/nikhilkumar/Documents/GitHub/App_Academy/Homeworks/Movie_buff_training/vendor/bundle/ruby/2.6.0/gems/websocket-driver-0.6.5/ext/websocket-driver
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 websocket_mask.bundle ./.gem.20220428-61659-ek3al9
