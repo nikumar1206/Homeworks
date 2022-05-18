@@ -51,16 +51,18 @@ herd.forEach(elephant => {
 
 // Phase 4
 
-const dinerBreakfast = function() {
-    order = ["cheesy scrambled eggs and bacon"]
-    if (order.length == 1) return console.log(`I'd like ${order} please!`);
-    const extra_item = () => {
-        order.push(extra_item)
-        console.log (`I'd like ${order.join(" and ")} please.`);
+function dinerBreakfast() {
+    let order = "cheesy scrambled eggs";
+    console.log(`I'd like ${order} please`)
+
+    return (extra_food) => {
+        order = `${order} and ${extra_food}`
+        console.log(`I'd like ${order} please`)
     }
 }
 
 let bfastOrder = dinerBreakfast();
+
 bfastOrder("chocolate chip pancakes");
 
-
+bfastOrder("grits");
