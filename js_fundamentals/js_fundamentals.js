@@ -18,11 +18,11 @@ function mysteryScoping2() {
 }
 // mysteryScoping2() outputs in block, then out of block
 
-  function mysteryScoping3() {
+function mysteryScoping3() {
     const x = 'out of block';
     if (true) {
-      var x = 'in block';  
-      console.log(x);
+        var x = 'in block';  
+        console.log(x);
     }
     console.log(x);
 }
@@ -59,6 +59,7 @@ function fizzbuzz(arr) {
     return new_arr
 }
 console.log(fizzbuzz([1,2,3,4,5,6,7,8,9]))
+console.log(fizzbuzz([9,12,15]))
 
 function isPrime(number) {
     if (number < 2) {
