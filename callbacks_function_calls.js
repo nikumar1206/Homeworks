@@ -5,15 +5,12 @@
 
 // Timeout + Closure
 
-// const hammertime = function(time) {
-//     window.setTimeout(function (cb) {
-//         alert(`${time} is hammertime!`)
-//     }, 5000)
-// }
 
-// const cb = () => {
-//     alert(`${time} is hammertime!`)
-// }
+const hammertime = (time) => {
+    window.setTimeout(function() {
+        alert(`${time} is HAMMERTIME!`)
+    }, 5000);
+};
 
 // Some Tea. Some Biscuits
 
