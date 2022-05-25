@@ -48,7 +48,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
     //reset url
-    let image_url_reset = document.getElementsByClassName("photo-url-input")[0].value;
+    let image_url_reset = document.getElementsByClassName("photo-url-input")[0];
+    console.log(image_url_reset);
     image_url_reset.value = "added!"
     
   });
