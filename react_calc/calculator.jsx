@@ -14,12 +14,12 @@ export default class Calculator extends React.Component {
 
   setNum1 = (e) => {
     e.preventDefault();
-    this.setState({ num1: e.currentTarget.value });
+    this.setState({ num1: e.Target.value });
   };
 
   setNum2 = (e) => {
     e.preventDefault();
-    this.setState({ num2: e.currentTarget.value });
+    this.setState({ num2: e.Target.value });
   };
 
   add = (e) => {
